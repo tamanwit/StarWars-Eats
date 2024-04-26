@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="bg.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>StarWar Eats</title>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <nav class="navbar" >
+      <a href="#home" class="logo">StarWar <span>Eats</span></a>
+      <div class="menuToggle" onclick="toggleMenu()"></div>
+      <ul class="navlinks">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>    
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="login.html" target="_blank" onclick="toggleMenu()">Log In</a></li>
+      </ul>
+    </nav>
+
+    <section class="banner animate1 " id="home">
+      <div class="content">
+        <h3 class="heading">May The Fork Be With You</h3>
+        <p class="paragraph">
+          A New Hope !! <br>A long time ago in a galaxy far, far away <br>Choose Food that fills you Desire, Always Choose Good
+        </p>
+        <a href="#menu" class="btn">Our menu</a>
+      </div>
+        <div class="o o1"></div>
+        <div class="o o2"></div>
+        <div class="o o3"></div>
+        <div class="o o4"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="row ">
+        <div class="col50 ">
+          <h2 id="sp" class="titleText"><span>A</span>bout Us</h2>
+          <br /><br /><br />
+          <p>
+            Star Wars is a space opera that takes place "a long time ago in a galaxy far, far away". The series follows Luke Skywalker, a young man who becomes involved in a war between an authoritarian empire and rebel forces. Luke, along with Han Solo and Princess Leia, must save Leia from captivity on a space station commanded by Darth Vader.
+            <br />
+            <br />
+            The Star Wars series is known for its advancements in special effects, including imaginative alien creatures, mechanical droids, and elaborate space battles. The opening crawl, which scrolls up and away from the bottom of the screen, was inspired by the opening crawls of the original Flash Gordon and Buck Rogers film serials. The crawls on the original trilogy films were created by filming physical models laid out on the floor
+          </p>
+        </div>
+
+        <div class="col50">
+          <div class="imgBx">
+            <img
+              src="https://mummyfever.co.uk/wp-content/uploads/2016/05/20160514_165452-1_resized.jpg"
+              alt="Food Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="slide-right" class="menu" id="menu">
+        <div class="title">
+          <h2 class="titleText"><span>O</span>ur Menu</h2>
+          <p>
+            From fiery sun to icy Neptune, a cosmic dance of worlds unfolds.
+          </p>
+        </div>
+          <div class="flexbox">
+            <div class="cards" data-tilt data-tilt-glare data-tilt-max-glare="0.2" >
+              <div class="content">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/secured/fullset/2019/12/11/0/CI_WaltDisneyWorld_DockingBay7_Desserts_StarWarsFood_s4x3.jpg.rend.hgtvcom.791.594.suffix/1576105150088.jpeg" alt="Soup" style="width:100%; height:250px; border:none; border-radius:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                <h1 style="font-size: 1.7em; font-weight:700; font-family:poppins;">Oi Oi Puff</h1>
+                <a class="add">
+                    <button class="btn" id="cardbtn" onclick="alert('Item Added Succesfully')">Add</button>
+                </a>
+              </div>
+              <div class="glow"></div>
+            </div>
+
+            <div class="cards" data-tilt data-tilt-glare data-tilt-max-glare="0.3" >
+                <div class="content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyMc-x42YYFX8e9ov2diQOaRp5frdQf_xcOTDcUh2IA&s" alt="Soup" style="width:100%; height:250px; border:none; border-radius:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                <h1 style="font-size: 1.7em; font-weight:700; font-family:poppins;">G' StarCruiser</h1>
+                <a class="add">
+                    <button class="btn" id="cardbtn" onclick="alert('Item Added Succesfully')">Add</button>
+                </a>
+                </div>
+                <div class="glow"></div>
+            </div>
+        
+            <div class="cards" data-tilt data-tilt-glare data-tilt-max-glare="0.3" >
+                <div class="content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qFyrAOVol_R2oLDPWdv-BJEOJ7S0Skc5SzxfS0QawQ&s" style="width:100%; height:250px; border:none; border-radius:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                <h1 style="font-size: 1.7em; font-weight:700; font-family:poppins;">Han Burgers</h1>
+                <a>
+                    <button class="btn" id="cardbtn" onclick="alert('Item Added Succesfully')">Add</button>
+                </a>
+                </div>
+                <div class="glow"></div>
+            </div>
+            
+                <div class="cards" data-tilt data-tilt-glare data-tilt-max-glare="0.3" >
+                <div class="content">
+                    <img src="https://live.staticflickr.com/7307/26846993581_a331b17509_b.jpg" alt="Pasta" alt="Pasta" style="width:100%; height:250px; border:none; border-radius:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    <h1 style="font-size: 1.7em; font-weight:700; font-family:poppins;">Vader Taters</h1>
+                    <a>
+                        <button class="btn" id="cardbtn" onclick="alert('Item Added Succesfully')">Add</button>
+                    </a>
+                </div>
+                <div class="glow"></div>
+                </div>
+
+                <div class="cards" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                <div class="content">
+                    <img src="https://i.pinimg.com/originals/02/04/24/02042496f041bfe5c6d6e5f705e4bc2f.jpg" alt="Pizza" style="width:100%; height:250px; border:none; border-radius:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    <h1 style="font-size: 1.7em; font-weight:700; font-family:poppins;">Millenium Falcon</h1>
+                    <a>
+                        <button class="btn" id="cardbtn" onclick="alert('Item Added Succesfully')">Add</button>
+                    </a>
+                </div>
+                <div class="glow"></div>
+                </div>
+            
+
+                <div class="cards" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                <div class="content">
+                    <img src="https://sweetkickinsalsa.com/wp-content/uploads/2018/03/shutterstock_571648003.jpg" alt="Burgers" style="width:100%; height:250px; border:none; border-radius:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    <h1 style="font-size: 1.7em; font-weight:700; font-family:poppins;">Tortilla Chips</h1>
+                    <a>
+                        <button class="btn" id="cardbtn" onclick="alert('Item Added Succesfully')">Add</button>
+                    </a>
+                </div>
+                <div class="glow"></div>
+                </div>
+            </div>
+            
+      <div class="title">
+        <a class="btn" id="btn" onclick="validate()">Check Out</a>
+        <!-- <div id="id01" class="modal">
+          
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="https://img.freepik.com/premium-vector/young-smiling-man-avatar-man-with-brown-beard-mustache-hair-wearing-yellow-sweater-sweatshirt-3d-vector-people-character-illustration-cartoon-minimal-style_365941-860.jpg" alt="Avatar" class="avatar" style="width: 200px; height: 200px;">
+              </div>
+              
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                <label for="psw"><b>Email Id</b></label>
+                <input type="text" placeholder="Enter Email Id" name="psw" required>
+ 
+                <label for="psw"><b>Address</b></label>
+                <input type="text" placeholder="Enter Address" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>   -->
+      </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+    <script src="vanilla-tilt.js"></script>
+  </body>
+</html>
